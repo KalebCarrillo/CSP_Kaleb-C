@@ -1,21 +1,23 @@
+#Kaleb Carrillo, First Project Python
+
 name = "Kaleb"
 
-Number1 = 5
+number1 = 5
 
-Number2 = 47
+number2 = 47
 
-Breakfast = "eggs"
+breakfast = "eggs"
 
-Color = "blue"
+color = "blue"
 
-School = "UCAS"
+school = "UCAS"
 
-Year = 2025
+year = 2025
 
-EyeColor = "Brown"
+eyeColor = "Brown"
 
-Age = "15"
+age = "15"
 
-Subject = "math"
+subject = "math"
 
 print(name, "I am", Age, "my eye color is", EyeColor, "I like the color", Color, 'I had', Breakfast, "for breakfast", "I go to", School, "my favorite subject is", Subject, "I like the number", Number1, "And the number", Number2,)
