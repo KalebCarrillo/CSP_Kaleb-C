@@ -20,4 +20,4 @@ age = "15"
 
 subject = "math"
 
-print(name, "I am", Age, "my eye color is", EyeColor, "I like the color", Color, 'I had', Breakfast, "for breakfast", "I go to", School, "my favorite subject is", Subject, "I like the number", Number1, "And the number", Number2,)
+print(name, "I am", age, "my eye color is", eyeColor, "I like the color", color, 'I had', breakfast, "for breakfast", "I go to", school, "my favorite subject is", subject, "I like the number", number1, "And the number", number2,)

@@ -12,7 +12,7 @@ int main(void){
     scanf("%d", &age);
     printf("Write out as much of pi as you know: \n");
     scanf('%d')
-    printf("Hello i am %s. I am %d years old. I like the number %f.\n", name, age, pi);
+    printf("Hello i am %s. I am %d years old. I like the number %f.\n", );
     printf("%d\n", age);
     printf("%f\n", pi);
     return 0;
