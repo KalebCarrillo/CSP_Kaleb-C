@@ -11,7 +11,7 @@ int main(void){
     printf("How old are you");
     scanf("%d", &age);
     printf("Write out as much of pi as you know: \n");
-    scanf('%d')
+    scanf('%d');
     printf("Hello i am %s. I am %d years old. I like the number %f.\n", );
     printf("%d\n", age);
     printf("%f\n", pi);
