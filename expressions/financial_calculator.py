@@ -15,7 +15,7 @@ transportation = float(input("what is your transportation cost?\n"))
 #spedning input
 spend = 10
 # calculate savings as 10% of income (income*.1) (varible)
-saving = income*.1
+saving = income*.10
 # calculate sav ing as income-savings-rent-utilites-groceries-transportaion (varible)
 savings = income - rent - utlitites - groceries - transportation
 # calculate percent income of utilites (utilites/income *100) (varible)
