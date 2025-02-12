@@ -13,11 +13,11 @@ groceries = float(input("What is groceries cost?\n"))
 # ask what their transportation is (varible an input)
 transportation = float(input("what is your transportation cost?\n"))
 #spedning input
-spend = 10
+#spend = 10
 # calculate savings as 10% of income (income*.1) (varible)
-saving = income*.10
+savings = income*.10
 # calculate sav ing as income-savings-rent-utilites-groceries-transportaion (varible)
-savings = income - rent - utlitites - groceries - transportation
+spending = income - rent - utlitites - groceries - transportation
 # calculate percent income of utilites (utilites/income *100) (varible)
 utlitite = (utlitites/income)*100
 # calc rent
@@ -27,7 +27,7 @@ grocerie = (groceries/income)*100
 # calculate percent income of transportation(transportation/income *100) (varible)
 transportations = (transportation/income)*100
 # calculate percent income of spending (spending/income *100) (varible)
-spending = (spend/income)*100
+spending = (spending/income)*100
 # Your rent i s $XX.XX which is XX% of your income. (Print)
 print("your rent is $",rent, "Which is", rents, "% of your income. \n")
 # Your utilites is $XX.XX which is XX% of your income. (Print)
@@ -39,4 +39,4 @@ print("Your transportation $", transportation, "Which is", transportations, "% o
 # Your spending is $XX.XX which is XX% of your income. (Print)
 #print("Your spending $", spend, "which is", spending, "% of your income. \n")
 # Your savings is $XX.XX which is XX% of your income. (Print)
-print("Your savings $", savings,"which is",saving, "% of your income. \n")
+#print("Your savings $", savings,"which is",saving, "% of your income. \n")

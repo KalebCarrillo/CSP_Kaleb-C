@@ -8,5 +8,6 @@ int main(void){
     scanf("%s", name);
     printf("What is your favorite subject: \n", subject);
     scanf("%s", subject);
+    printf("Hello %s your favorite subject is %s.", name, subject);
     return 0;
 }
