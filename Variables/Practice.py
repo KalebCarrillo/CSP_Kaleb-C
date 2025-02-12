@@ -1,4 +1,4 @@
-#Kaleb Carrillo, First Project Python
+#Kaleb Carrillo, Variables Practice Python
 
 name = "Kaleb"
 

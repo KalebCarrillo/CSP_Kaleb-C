@@ -1,4 +1,4 @@
-// Kaleb Carrillo, Practice C
+// Kaleb Carrillo, Variables Practice C
 #include <stdio.h>
 
 char name[] = "Kaleb";
