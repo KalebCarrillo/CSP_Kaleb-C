@@ -21,35 +21,22 @@ int main(void){
     printf("How much is transportation: \n", transportation);
     scanf("%f", &transportation);
 
-    float utilitie;
-    float rents;
-    float grocerie;
-    float transportations;
-    float saving;
-    float spending;
-    float spend;
-
-
-    saving = (income*.1);
-
-    spend = (spending/income)*100;
+    float utilitie = (utilities/income)*100;;
+    float rents = (rent/income)*100;
+    float grocerie = (groceries/income)*100;
+    float transportations = (transportation/income)*100;
+    float saving = (income*.1);
+    float saving_percentage = (saving/income)*100;
+    float spending = income-rent-utilities-groceries-transportation-saving;
+    float spend = (spending/income)*100;
+    
    //calculate sav ing as income-savings-rent-utilites-groceries-transportaion (varible)
-    spending = income - rent - utilities - groceries - transportation;
-;
-    utilitie = (utilities/income)*100;
-
-    rents = (rent/income)*100;
-  //calculate percent income of groceries (groceries/income *100) (varible)
-    grocerie = (groceries/income)*100;
-  //calculate percent income of transportation(transportation/income *100) (varible)
-    transportations = (transportation/income)*100;
-  //calculate percent income of spending (spending/income *100) (varible)
-    spending = (spend/income)*100;
- 
+    
     printf("your rent is $ %.2f. Which is %.2f %% of your income. \n", rent, rents);
     printf("Your utilities $ %.2f. Which is %.2f %% of your income. \n", utilities, utilitie);
     printf("Your groceries $ %.2f. Which is %.2f %% of your income. \n", groceries, grocerie);
     printf("Your transportation $ %.2f. Which is %.2f %% of your income. \n", transportation, transportations);
-    printf("Your have $ %.2f left to spend. \n", spending);
+    printf("Your have $ %.2f left to spend. Which is %.2f %% of your income. \n", spending, spend);
+    printf("Your savings is $ %.2f Which is %.2f percent of your income. \n", saving, saving_percentage);
      return 0;
 }
