@@ -1,5 +1,7 @@
 # Kaleb Carrillo, Silly Sentences Python
 
+print("Welcome user to my silly sentence maker!")
+
 def values(type):
     return input(f"Please give me a {type}:\n")
 
