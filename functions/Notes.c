@@ -1,10 +1,14 @@
-// Kaleb Carrillo, Functions C
+// Kaleb Carrillo, Functions Notes C
 #include <stdio.h>
 
 int num;
-char name[], place[], verb[];
+char name[50], place[50], verb[50];
 void add(int numOne, int numTwo){
     return numOne + numTwo;
+}
+
+void due(char assignment[50], char day[20]){
+    printf("the %s assigment is due %s", assignment, day); 
 }
 
 const char* word(char type [50]){
@@ -13,8 +17,7 @@ const char* word(char type [50]){
 }
 
 int main(void){
-    //printf("Please tell me a number: \n");
-    //scanf("%d", num);
-    //printf("%d"add(5+8));
-    return 0;
+    due("function Notes", "Today");
+    due("function Notes", "Today");
+    due("function Notes", "Today");
 }
