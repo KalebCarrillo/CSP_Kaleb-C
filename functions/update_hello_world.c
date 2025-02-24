@@ -3,7 +3,8 @@
 
 int main(void){;
     char type[50];
-    printf("Please tell me your %s:", type); 
+    printf("Please tell me your name: "); 
+    scanf("%s", type);
 
 char name1 = values("name");
 printf("hello", name1);
