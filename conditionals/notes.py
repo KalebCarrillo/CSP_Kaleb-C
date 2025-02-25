@@ -27,7 +27,7 @@ else: #If the boolean is false, the else statement happens
 
 #5. What kind of statement do you use if you have more than 2 needed outcomes?
 num = 2
-#. computers read top to bottom, check the least likely first
+#6. computers read top to bottom, check the least likely first
 if num == 0: #<-- if always starts the conditional
     print("THere are none.")
 elif num == 1: #everything inbetween should be elif
@@ -49,15 +49,18 @@ else: #<- else always end the conditional
 #! = not
 
 #7. What are the 3 logical operators?
-#if num <10 and > 5:
-    print("This is a big single diget number.")
-###print("This is a big single diget number.")
+
 #8. What are logical operators for?
     #allows the code tp handle more diofficult questions increases complexity
 
 #9. What does a nested conditional statement do?
-
-
+if num <10:
+    if num ==8:
+        print("This prints at 8")
+    else:
+        print("The number is less that 10")
+else:
+    print("The number is buigger that")
 
 #How do you write an if statement in C?
 #How do you write else statements in C?
