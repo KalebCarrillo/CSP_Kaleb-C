@@ -27,9 +27,9 @@ int main(void){
         printf("You have a lot of siblings\n");
     }
     //13. How do you write the 3 logical operators in C?
-    // && = and
-    // || = or
-    // ! = not
+        // && = and
+        // || = or
+        // ! = not
 
     if(num == 7 || num == 13){
         printf("%d is an ulucky number\n", num);
