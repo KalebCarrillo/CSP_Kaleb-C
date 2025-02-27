@@ -1,7 +1,8 @@
 #Kaleb Carrillo, Update hello world
 
 def values(type):
-    return input(f"Please tell me your {type}:\n") 
+    
+    return input(f"Please tell me your {type}:\n")
 
 name1 = values("name")
 print("hello", name1)
