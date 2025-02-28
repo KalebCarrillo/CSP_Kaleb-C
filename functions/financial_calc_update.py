@@ -1,8 +1,8 @@
 # Kaleb Carrillo, Financial Calculator Update python
 print("Welcomes user this is a fanacial calculator for your needs.")
 
-def values(type):
-    float(input(f"What is your {type}?\n"))
+def values(value):
+    float(input(f"What is your {value}?\n"))
 
 income = values("income")
 rent = values("rent")
