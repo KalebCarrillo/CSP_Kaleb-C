@@ -11,10 +11,11 @@ current= time.time()
 
 #Current data and time like we see it normally
 now = time.ctime(current)
+print(now)
 #print(now)
 
 # Get just a part of the time
 local_time =time.localtime(current)
-day = local_time.tm_wday
+#day = local_time.tm_wday
 hour = local_time.tm_hour #millitary time (0-23
 print(local_time)
