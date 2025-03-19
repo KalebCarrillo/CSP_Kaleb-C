@@ -21,3 +21,7 @@ int main(void){
     due("function Notes", "Today");
     due("function Notes", "Today");
 }
+
+void info(float income[50], float day[20]){
+    printf("the %s assigment is due %s"); 
+}

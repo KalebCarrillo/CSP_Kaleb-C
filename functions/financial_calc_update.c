@@ -8,6 +8,9 @@ float utilities;
 float groceries;
 float transportation;
 
+ void info(float income[50], float day[20]){
+printf("the %s assigment is due %s"); 
+}
 int main(void){
     printf("Welcomes user this is a fanacial calculator for your needs. \n");
     printf("how much is your in income: \n", income);
@@ -20,6 +23,15 @@ int main(void){
     scanf("%f", &groceries);
     printf("How much is transportation: \n", transportation);
     scanf("%f", &transportation);
+
+    //float utilitie = info("income");
+    float rents = (rent/income)*100;
+    float grocerie = (groceries/income)*100;
+    float transportations = (transportation/income)*100;
+    float saving = (income*.1);
+    float saving_percentage = (saving/income)*100;
+    float spending = income-rent-utilities-groceries-transportation-saving;
+    float spend = (spending/income)*100;
 
     float utilitie = (utilities/income)*100;;
     float rents = (rent/income)*100;
