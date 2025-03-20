@@ -1,54 +1,36 @@
 // Kaleb Carrillo, Financial Calculator Update C
-
 #include <stdio.h>
+#include <math.h>
 
-float income;
-float rent;
-float utilities;
-float groceries;
-float transportation;
-
- void info(float income[50], float day[20]){
-printf("the %s assigment is due %s"); 
+char name [1000];
+float user_input(char*question){
+    float value;
+    printf("%s", question);
+    scanf("%f", &value);
+    return value;
+}
+void print_result(char*item_name, float num, float income){
+    float percentage = (num/income)*100;
+    printf("%s, your monthly %s is $%.2f which is %.2f%% of your income!\n", name, item_name, num, percentage);
 }
 int main(void){
-    printf("Welcomes user this is a fanacial calculator for your needs. \n");
-    printf("how much is your in income: \n", income);
-    scanf("%f", &income);
-    printf("How much is your rent: \n", rent);
-    scanf("%f", &rent);
-    printf("How much are your utlitiles: \n", utilities);
-    scanf("%f", &utilities);
-    printf("How much is are your groceries: \n");
-    scanf("%f", &groceries);
-    printf("How much is transportation: \n", transportation);
-    scanf("%f", &transportation);
+    float income, rent, utilities, groceries, transportation, savings, spendings;
 
-    //float utilitie = info("income");
-    float rents = (rent/income)*100;
-    float grocerie = (groceries/income)*100;
-    float transportations = (transportation/income)*100;
-    float saving = (income*.1);
-    float saving_percentage = (saving/income)*100;
-    float spending = income-rent-utilities-groceries-transportation-saving;
-    float spend = (spending/income)*100;
+    income = user_input("What is your income?: \n");
+    rent = user_input("What is your rent?: \n");
+    utilities = user_input("How much do your utilities cost?: \n");
+    groceries = user_input("How much do your groceries cost?: \n");
+    transportation = user_input("How much does transportation cost (gas, bus pass, Lyft, etc.)?: \n");
+    
+    savings = income*0.1;
+    spendings = income-savings-rent-utilities-groceries-transportation;
 
-    float utilitie = (utilities/income)*100;;
-    float rents = (rent/income)*100;
-    float grocerie = (groceries/income)*100;
-    float transportations = (transportation/income)*100;
-    float saving = (income*.1);
-    float saving_percentage = (saving/income)*100;
-    float spending = income-rent-utilities-groceries-transportation-saving;
-    float spend = (spending/income)*100;
+    print_result("rent", rent, income);
+    print_result("utilities", utilities, income);
+    print_result("groceries", groceries, income);
+    print_result("transportation", transportation, income);
+    print_result("savings", savings, income);
+    print_result("spendings", spendings, income);
     
-   //calculate sav ing as income-savings-rent-utilites-groceries-transportaion (varible)
-    
-    printf("your rent is $ %.2f. Which is %.2f %% of your income. \n", rent, rents);
-    printf("Your utilities $ %.2f. Which is %.2f %% of your income. \n", utilities, utilitie);
-    printf("Your groceries $ %.2f. Which is %.2f %% of your income. \n", groceries, grocerie);
-    printf("Your transportation $ %.2f. Which is %.2f %% of your income. \n", transportation, transportations);
-    printf("Your have $ %.2f left to spend. Which is %.2f %% of your income. \n", spending, spend);
-    printf("Your savings is $ %.2f Which is %.2f percent of your income. \n", saving, saving_percentage);
-     return 0;
+    return 0;
 }
