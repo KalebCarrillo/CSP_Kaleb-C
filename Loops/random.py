@@ -12,7 +12,8 @@ print("[][][]        ")
 import random
 words = ["software", "iconic", "dirtbike", "manager", "pepsi", "explode", "investiagator", "exciting8", "attitude", "computer", "cyber", "architect", "printer", "publication", "evaluation", "rhinoceros", "pharoah", "crocodile", "alligator", "pneumonoultramicroscopicsilicovolcanoconiosis", "bombaclat"]
 random_words = random.choice(words)
-
+print(random_words)
+ 
 
 # List of words to guess
 # Set up the game
