@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<style>
+.container {
+    font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "menu content"
+    "footer footer";
+  grid-template-columns: 1fr 3fr;
+  gap: 5px;
+  background-color: #FFB347;
+  padding: 5px;
+  height: 100%;
+}
+.container > div {
+  background-color: #FFC983;
+  padding: 10px;
+}
+.container > div.header {
+  grid-area: header;
+  text-align: center;
+}
+.container > div.menu {
+  grid-area: menu;
+}
+.container > div.content {
+  grid-area: content;
+}
+.container > div.content {
+  grid-area: content;
+}
+.container > div.content {
+  grid-area: content;
+}
+.container > div.content {
+  grid-area: content;
+}
+
+img{
+  width: 300px;
+  height: auto;
+}
+.row {
+  width: 200px;
+  height: auto;
+  display: flex;
+}
+.column {
+  flex: 33.33%;
+  padding: 10px;
+}
+.menu{
+  display: flex;
+}
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+</style>
+
+<body>
+
+<div class="container">
+  <div class="header"><h1>Bryce Canyon</h1></div>
+  <div class="menu"><ol>
+    <div class="row">
+      <div class="column">
+        <img src="https://th-thumbnailer.cdn-si-edu.com/prCcoKOQiPkBi5QvIyWHEQVIltE=/fit-in/1600x0/https://tf-cmsv2-journeys-media.s3.amazonaws.com/filer/d2/52/d252f665-21c6-4daa-b163-8911ddd0d383/ut_bryce_hoodoos_sunset_ist_176984017.jpg">
+      </div>
+      <div class="column">
+        <img>
+      </div>
+    </div>
+    </div>
+  
+    <div class="grid-container">
+      <div class="item1">
+        <h3>Bryce Canyon History</h3>
+        <p>Bryce Canyon National Park's history spans from ancient Native American occupation to its designation as a national park. Archaeological evidence suggests human presence in the area for at least 10,000 years, with various cultures inhabiting the region. The park's name is derived from Ebenezer Bryce, a Mormon pioneer who settled in the area in the 1870s. Preservation efforts led to Bryce Canyon being declared a National Monument in 1923 and a National Park in 1928.</p></div>
+    </div>
+
+  <div class="content"><h3>Why To Visit</h3>
+    <p>Bryce Canyon National Park is a must-visit destination for several reasons, including its unique natural rock formations, breathtaking views, and opportunities for outdoor activities like hiking and stargazing. The park also offers a chance to experience a peaceful escape from crowds and enjoy the natural beauty of the area. It's unique formations create an otherworldly landscape that is both awe-inspiring and photogenic. In the winter people who visit can a cross-country ski, making it a unique winter destination. 
+    </p></div>
+
+    
+</body>
+</html>
