@@ -8,4 +8,4 @@ function myFunction() {
   }
   function change(){
     document.getElementById("image").src = "https://i0.wp.com/www.brycecanyoncountry.com/wp-content/uploads/bryce-canyon-national-park_bestcamping2_5132d5d4.webp"
-}
+  }
